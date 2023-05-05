@@ -1,0 +1,61 @@
+D:\Luyen Code\PBL03\PBL03\bin\Debug\PBL03.exe.config
+D:\Luyen Code\PBL03\PBL03\bin\Debug\PBL03.exe
+D:\Luyen Code\PBL03\PBL03\bin\Debug\PBL03.pdb
+D:\Luyen Code\PBL03\PBL03\bin\Debug\Guna.UI2.dll
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.csproj.AssemblyReference.cache
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.csproj.SuggestedBindingRedirects.cache
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.FormLogin.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Properties.Resources.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.csproj.GenerateResource.cache
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.csproj.CoreCompileInputs.cache
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.csproj.CopyComplete
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.exe
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.pdb
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.FormMain.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_StatusTable.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_MEmployee.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_Menu.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.UserControl_Food.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.UserControl_Menu.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_Order.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.UserControl_Order.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_Admin.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_QuanLyThuNgan.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_Update.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_Profit.resources
+D:\Luyen Code\PBL03\PBL03\obj\Debug\PBL03.Form_Revenue.resources
+D:\picture\PBL03-master\PBL03\bin\Debug\PBL03.exe.config
+D:\picture\PBL03-master\PBL03\bin\Debug\PBL03.exe
+D:\picture\PBL03-master\PBL03\bin\Debug\PBL03.pdb
+D:\picture\PBL03-master\PBL03\bin\Debug\EntityFramework.dll
+D:\picture\PBL03-master\PBL03\bin\Debug\EntityFramework.SqlServer.dll
+D:\picture\PBL03-master\PBL03\bin\Debug\Guna.UI2.dll
+D:\picture\PBL03-master\PBL03\bin\Debug\EntityFramework.xml
+D:\picture\PBL03-master\PBL03\bin\Debug\EntityFramework.SqlServer.xml
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.csproj.AssemblyReference.cache
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.csproj.SuggestedBindingRedirects.cache
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.FormLogin.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.FormMain.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_Profit.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_Admin.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_MEmployee.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_Menu.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_Order.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_QuanLyThuNgan.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_Revenue.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_StatusTable.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Form_Update.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.Properties.Resources.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.UserControl_Food.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.UserControl_Menu.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.UserControl_Order.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.csproj.GenerateResource.cache
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.csproj.CoreCompileInputs.cache
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.csproj.CopyComplete
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.exe
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.pdb
+D:\picture\PBL03-master\PBL03\bin\Debug\BCrypt.Net.dll
+D:\picture\PBL03-master\PBL03\bin\Debug\BCrypt.Net.xml
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.ThuNgan.ThuNgan_VIEW.FormChangePass.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.DangNhap.DangNhap_VIEW.FormForgot.resources
+D:\picture\PBL03-master\PBL03\obj\Debug\PBL03.DangNhap.DangNhap_VIEW.FormForgot2.resources
