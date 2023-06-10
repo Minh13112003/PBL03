@@ -9,13 +9,12 @@ namespace PBL03.DangNhap.DangNhap_BLL
 {
     internal class Login_BLL
     {
-
         private static Login_BLL bll;
         public static Login_BLL Instance
         {
             get
             {
-                if(bll == null)
+                if (bll == null)
                 {
                     bll = new Login_BLL();
                 }
@@ -25,12 +24,18 @@ namespace PBL03.DangNhap.DangNhap_BLL
 
         public Login_BLL()
         {
-            
+
         }
 
-        public void dangnhap(string Username, string Password) 
-        { 
-            Login_DAL.Instance.dangnhap(Username, Password);
+      
+        public bool CheckQuanLy(string UserName, string PassWord)
+        {
+            return Login_DAL.Instance.CheckQuanLy(UserName, PassWord);
+        }
+
+        public bool CheckThuNgan(string UserName,string PassWord)
+        {
+            return Login_DAL.Instance.CheckThuNgan(UserName, PassWord);
         }
 
         public bool CheckInfor(string user, string name, string phonenumber, string address)
