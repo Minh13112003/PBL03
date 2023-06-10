@@ -18,15 +18,16 @@ namespace PBL03
         public TableFood()
         {
             this.Bills = new HashSet<Bill>();
+            this.OrderTables = new HashSet<OrderTable>();
         }
     
         public string ID_Table { get; set; }
         public bool statusTable { get; set; }
         public int Capacity { get; set; }
-        public int IDOrder { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill> Bills { get; set; }
-        public virtual OrderTable OrderTable { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrderTable> OrderTables { get; set; }
     }
 }

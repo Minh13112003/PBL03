@@ -16,8 +16,7 @@ namespace PBL03
     {
         public int ID_TimeSheet { get; set; }
         public int IDSchedule { get; set; }
-        public System.DateTime TimeCheckIn { get; set; }
-        public System.DateTime TimeCheckOut { get; set; }
+        public DateTime WorkDay { get; set; }
     
         public virtual WorkSchedule WorkSchedule { get; set; }
     }

@@ -25,6 +25,8 @@ namespace PBL03
         public float Price { get; set; }
         public bool StatusFood { get; set; }
         public string IDCategory { get; set; }
+        public int QuantityFood { get; set; }
+        public string PictureFood { get; set; }
     
         public virtual FoodCategory FoodCategory { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

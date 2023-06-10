@@ -16,5 +16,18 @@ namespace PBL03
         {
             InitializeComponent();
         }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            Form_Order f1 = (Form_Order)Application.OpenForms["Form_Order"];
+            f1.flowLayout_Order.Controls.Remove(this);
+            foreach (UserControl_Food uf in f1.flowLayout_Food.Controls)
+            {
+                if (uf.lbFood.Text == lbFood.Text)
+                {
+                    uf.btnSelect.Visible = false;
+                }
+            }
+        }
     }
 }

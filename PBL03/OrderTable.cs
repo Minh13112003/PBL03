@@ -14,21 +14,12 @@ namespace PBL03
     
     public partial class OrderTable
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public OrderTable()
-        {
-            this.Bills = new HashSet<Bill>();
-            this.TableFoods = new HashSet<TableFood>();
-        }
-    
-        public int ID_Order { get; set; }
+        public string ID_Order { get; set; }
         public string IDFood { get; set; }
         public int Quantity { get; set; }
+        public string IDTable { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill> Bills { get; set; }
         public virtual Food Food { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TableFood> TableFoods { get; set; }
+        public virtual TableFood TableFood { get; set; }
     }
 }

@@ -25,14 +25,12 @@ namespace PBL03
         public System.DateTime TimeCheckOut { get; set; }
         public string idEmployee { get; set; }
         public string idTable { get; set; }
-        public int idOrder { get; set; }
         public float TotalMoney { get; set; }
         public bool statusBill { get; set; }
     
-        public virtual Employee Employee { get; set; }
-        public virtual OrderTable OrderTable { get; set; }
-        public virtual TableFood TableFood { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillHistory> BillHistories { get; set; }
+        public virtual Employee Employee { get; set; }
+        public virtual TableFood TableFood { get; set; }
     }
 }

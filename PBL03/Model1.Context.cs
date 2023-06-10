@@ -10,13 +10,14 @@
 namespace PBL03
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PBL03Entities : DbContext
+    public partial class PBL3Entities1 : DbContext
     {
-        public PBL03Entities()
-            : base("name=PBL03Entities")
+        public PBL3Entities1()
+            : base("name=PBL3Entities1")
         {
         }
     
@@ -26,13 +27,13 @@ namespace PBL03
         }
     
         public virtual DbSet<Account> Accounts { get; set; }
-        public virtual DbSet<Bill> Bills { get; set; }
         public virtual DbSet<BillHistory> BillHistories { get; set; }
+        public virtual DbSet<Bill> Bills { get; set; }
         public virtual DbSet<Cost> Costs { get; set; }
         public virtual DbSet<Discount> Discounts { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
-        public virtual DbSet<Food> Foods { get; set; }
         public virtual DbSet<FoodCategory> FoodCategories { get; set; }
+        public virtual DbSet<Food> Foods { get; set; }
         public virtual DbSet<OrderTable> OrderTables { get; set; }
         public virtual DbSet<Revenue> Revenues { get; set; }
         public virtual DbSet<Salary> Salaries { get; set; }
@@ -41,5 +42,6 @@ namespace PBL03
         public virtual DbSet<TableFood> TableFoods { get; set; }
         public virtual DbSet<TimeSheet> TimeSheets { get; set; }
         public virtual DbSet<WorkSchedule> WorkSchedules { get; set; }
+        
     }
 }
