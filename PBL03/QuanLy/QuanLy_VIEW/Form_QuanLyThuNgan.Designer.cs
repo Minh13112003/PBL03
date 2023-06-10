@@ -33,17 +33,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnMenu = new System.Windows.Forms.Panel();
-            this.btReset = new Guna.UI2.WinForms.Guna2Button();
             this.btnCollapse = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btnHomeDown = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.pnExpand = new System.Windows.Forms.Panel();
-            this.btnHomeUp = new Guna.UI2.WinForms.Guna2Button();
             this.btnExpand = new Guna.UI2.WinForms.Guna2TileButton();
-            this.pnDisplayFunction = new System.Windows.Forms.Panel();
             this.dtgvShow = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.pnDisplayFunction = new System.Windows.Forms.Panel();
             this.pnMenu.SuspendLayout();
             this.pnExpand.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvShow)).BeginInit();
@@ -52,9 +49,7 @@
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pnMenu.Controls.Add(this.btReset);
             this.pnMenu.Controls.Add(this.btnCollapse);
-            this.pnMenu.Controls.Add(this.btnHomeDown);
             this.pnMenu.Controls.Add(this.btnDelete);
             this.pnMenu.Controls.Add(this.btnEdit);
             this.pnMenu.Controls.Add(this.btnAdd);
@@ -64,29 +59,11 @@
             this.pnMenu.Size = new System.Drawing.Size(199, 707);
             this.pnMenu.TabIndex = 0;
             this.pnMenu.Visible = false;
-            // 
-            // btReset
-            // 
-            this.btReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btReset.FillColor = System.Drawing.Color.Transparent;
-            this.btReset.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(231)))), ((int)(((byte)(250)))));
-            this.btReset.Image = ((System.Drawing.Image)(resources.GetObject("btReset.Image")));
-            this.btReset.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btReset.ImageSize = new System.Drawing.Size(15, 15);
-            this.btReset.Location = new System.Drawing.Point(0, 247);
-            this.btReset.Name = "btReset";
-            this.btReset.Size = new System.Drawing.Size(199, 77);
-            this.btReset.TabIndex = 4;
-            this.btReset.Text = "Reset";
-            this.btReset.Click += new System.EventHandler(this.btReset_Click);
+            this.pnMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnMenu_Paint);
             // 
             // btnCollapse
             // 
-            this.btnCollapse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCollapse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
             this.btnCollapse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCollapse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCollapse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -96,29 +73,16 @@
             this.btnCollapse.ForeColor = System.Drawing.Color.White;
             this.btnCollapse.Image = ((System.Drawing.Image)(resources.GetObject("btnCollapse.Image")));
             this.btnCollapse.ImageSize = new System.Drawing.Size(12, 12);
-            this.btnCollapse.Location = new System.Drawing.Point(159, 67);
+            this.btnCollapse.Location = new System.Drawing.Point(159, 0);
             this.btnCollapse.Name = "btnCollapse";
             this.btnCollapse.Size = new System.Drawing.Size(40, 77);
             this.btnCollapse.TabIndex = 2;
             this.btnCollapse.Click += new System.EventHandler(this.btnCollapse_Click);
             // 
-            // btnHomeDown
-            // 
-            this.btnHomeDown.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHomeDown.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHomeDown.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHomeDown.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHomeDown.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnHomeDown.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnHomeDown.ForeColor = System.Drawing.Color.White;
-            this.btnHomeDown.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeDown.Image")));
-            this.btnHomeDown.Location = new System.Drawing.Point(134, 0);
-            this.btnHomeDown.Name = "btnHomeDown";
-            this.btnHomeDown.Size = new System.Drawing.Size(65, 61);
-            this.btnHomeDown.TabIndex = 3;
-            // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
+            this.btnDelete.BorderColor = System.Drawing.Color.BlanchedAlmond;
             this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -128,15 +92,17 @@
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(231)))), ((int)(((byte)(250)))));
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnDelete.Location = new System.Drawing.Point(0, 496);
+            this.btnDelete.Location = new System.Drawing.Point(0, 503);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(199, 77);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
+            this.btnEdit.BorderColor = System.Drawing.Color.BlanchedAlmond;
             this.btnEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -146,15 +112,17 @@
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(231)))), ((int)(((byte)(250)))));
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnEdit.Location = new System.Drawing.Point(0, 413);
+            this.btnEdit.Location = new System.Drawing.Point(0, 399);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(199, 77);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edit";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
+            this.btnAdd.BorderColor = System.Drawing.Color.BlanchedAlmond;
             this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -165,7 +133,7 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnAdd.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnAdd.Location = new System.Drawing.Point(0, 330);
+            this.btnAdd.Location = new System.Drawing.Point(0, 289);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(199, 77);
             this.btnAdd.TabIndex = 0;
@@ -174,7 +142,7 @@
             // 
             // pnExpand
             // 
-            this.pnExpand.Controls.Add(this.btnHomeUp);
+            this.pnExpand.BackColor = System.Drawing.Color.Transparent;
             this.pnExpand.Controls.Add(this.btnExpand);
             this.pnExpand.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnExpand.Location = new System.Drawing.Point(199, 0);
@@ -182,24 +150,9 @@
             this.pnExpand.Size = new System.Drawing.Size(65, 707);
             this.pnExpand.TabIndex = 1;
             // 
-            // btnHomeUp
-            // 
-            this.btnHomeUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHomeUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHomeUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHomeUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHomeUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnHomeUp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnHomeUp.ForeColor = System.Drawing.Color.White;
-            this.btnHomeUp.Image = ((System.Drawing.Image)(resources.GetObject("btnHomeUp.Image")));
-            this.btnHomeUp.Location = new System.Drawing.Point(0, 0);
-            this.btnHomeUp.Name = "btnHomeUp";
-            this.btnHomeUp.Size = new System.Drawing.Size(65, 61);
-            this.btnHomeUp.TabIndex = 1;
-            // 
             // btnExpand
             // 
-            this.btnExpand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnExpand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(101)))), ((int)(((byte)(116)))));
             this.btnExpand.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExpand.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExpand.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -208,24 +161,17 @@
             this.btnExpand.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnExpand.ForeColor = System.Drawing.Color.White;
             this.btnExpand.Image = ((System.Drawing.Image)(resources.GetObject("btnExpand.Image")));
-            this.btnExpand.Location = new System.Drawing.Point(0, 67);
+            this.btnExpand.Location = new System.Drawing.Point(0, 0);
             this.btnExpand.Name = "btnExpand";
             this.btnExpand.Size = new System.Drawing.Size(40, 77);
             this.btnExpand.TabIndex = 0;
             this.btnExpand.Click += new System.EventHandler(this.btnExpand_Click);
             // 
-            // pnDisplayFunction
-            // 
-            this.pnDisplayFunction.Location = new System.Drawing.Point(205, 0);
-            this.pnDisplayFunction.Name = "pnDisplayFunction";
-            this.pnDisplayFunction.Size = new System.Drawing.Size(1194, 707);
-            this.pnDisplayFunction.TabIndex = 2;
-            this.pnDisplayFunction.Visible = false;
-            // 
             // dtgvShow
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgvShow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvShow.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -248,16 +194,16 @@
             this.dtgvShow.Location = new System.Drawing.Point(205, 0);
             this.dtgvShow.Name = "dtgvShow";
             this.dtgvShow.RowHeadersVisible = false;
-            this.dtgvShow.RowHeadersWidth = 100;
+            this.dtgvShow.RowHeadersWidth = 51;
             this.dtgvShow.RowTemplate.Height = 24;
-            this.dtgvShow.Size = new System.Drawing.Size(1194, 707);
+            this.dtgvShow.Size = new System.Drawing.Size(1191, 704);
             this.dtgvShow.TabIndex = 3;
             this.dtgvShow.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgvShow.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dtgvShow.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dtgvShow.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dtgvShow.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgvShow.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgvShow.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtgvShow.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvShow.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtgvShow.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -275,10 +221,22 @@
             this.dtgvShow.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvShow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvShow_CellContentClick);
             // 
+            // pnDisplayFunction
+            // 
+            this.pnDisplayFunction.BackColor = System.Drawing.Color.Transparent;
+            this.pnDisplayFunction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnDisplayFunction.Location = new System.Drawing.Point(284, 0);
+            this.pnDisplayFunction.Name = "pnDisplayFunction";
+            this.pnDisplayFunction.Size = new System.Drawing.Size(1115, 707);
+            this.pnDisplayFunction.TabIndex = 2;
+            this.pnDisplayFunction.Visible = false;
+            // 
             // Form_QuanLyThuNgan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1399, 707);
             this.Controls.Add(this.dtgvShow);
             this.Controls.Add(this.pnDisplayFunction);
@@ -302,11 +260,8 @@
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnEdit;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2Button btnHomeUp;
-        private Guna.UI2.WinForms.Guna2Button btnHomeDown;
         private Guna.UI2.WinForms.Guna2TileButton btnCollapse;
-        private System.Windows.Forms.Panel pnDisplayFunction;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgvShow;
-        private Guna.UI2.WinForms.Guna2Button btReset;
+        public Guna.UI2.WinForms.Guna2DataGridView dtgvShow;
+        public System.Windows.Forms.Panel pnDisplayFunction;
     }
 }

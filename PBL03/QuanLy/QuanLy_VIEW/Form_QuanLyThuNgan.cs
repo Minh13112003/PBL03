@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using PBL03.Quanly.Quanly_BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,16 +9,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL03.QuanLy.QuanLy_BLL;
+using static PBL03.Form_Update;
 
 namespace PBL03
 {
     public partial class Form_QuanLyThuNgan : Form
     {
+        
         public Form_QuanLyThuNgan()
         {
             InitializeComponent();
+            ShowDT();
         }
+
+        private void ShowDT()
+        {
+            dtgvShow.DataSource = Manager_BLL.Instance.Show();
+            dtgvShow.Visible = true;
+            dtgvShow.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        }
+
         //private async void hideSubMenu()
         //{
         //    if (pnMenu.Visible && btnHomeUp.Visible)
@@ -48,8 +59,6 @@ namespace PBL03
         {
             //showSubMenu(pnMenu, btnHomeUp, btnHomeDown);
             pnMenu.Visible = true;
-            btnHomeDown.Visible = true;
-            btnHomeUp.Visible = false;
             btnExpand.Visible = false;
             btnCollapse.Visible = true;
         }
@@ -57,9 +66,7 @@ namespace PBL03
         private void btnCollapse_Click(object sender, EventArgs e)
         {
             pnMenu.Visible = false;
-            btnHomeUp.Visible = true;
             btnExpand.Visible = true;
-            btnHomeDown.Visible = false;
             btnCollapse.Visible = false;
         }
 
@@ -70,21 +77,32 @@ namespace PBL03
             pnDisplayFunction.Controls.Clear();
             Form_Update fu = new Form_Update();
             fu.TopLevel = false;
+            fu.FormBorderStyle = FormBorderStyle.None;
+            fu.Dock = DockStyle.Fill;
+            pnDisplayFunction.Controls.Clear();
+           
             pnDisplayFunction.Controls.Add(fu);
             fu.Size = pnDisplayFunction.Size;
             fu.Show();
-        }
+            fu.pass += new Mydele(ShowDT);
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        }
+       
+        private void BtnEdit_Click(object sender, EventArgs e)
         {
             dtgvShow.Visible = false;
             pnDisplayFunction.Visible = true;
             pnDisplayFunction.Controls.Clear();
-            Form_Update fu = new Form_Update();
-            fu.TopLevel = false;
+            Form_Update fu = new Form_Update()
+            {
+                TopLevel = false
+            };
+            
             pnDisplayFunction.Controls.Add(fu);
             fu.Size = pnDisplayFunction.Size;
-            if (dtgvShow.SelectedRows.Count > 0) {
+            
+            if (dtgvShow.SelectedRows.Count > 0)
+            {
                 fu.Show();
                 fu.tbAccount.Text = dtgvShow.SelectedRows[0].Cells["Acc"].Value.ToString();
                 fu.tbAccount.Enabled = false;
@@ -98,24 +116,24 @@ namespace PBL03
             }
             else
             {
-                MessageBox.Show("Bạn chưa chọn hàng để chỉnh sửa !");
+                MessageBox.Show("Bạn chưa chọn hàng để chỉnh sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-
+            fu.pass += new Mydele(ShowDT);
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void BtnDelete_Click(object sender, EventArgs e)
         {
             pnDisplayFunction.Visible = false;
             dtgvShow.Visible = true;
-            if((MessageBox.Show("Bạn có muốn xoá không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
+            if ((MessageBox.Show("Bạn có muốn xoá không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
             {
                 Manager_BLL.Instance.Delete(dtgvShow.SelectedRows[0].Cells["Id_Employee"].Value.ToString(), dtgvShow.SelectedRows[0].Cells["Acc"].Value.ToString());
-                MessageBox.Show("Xóa thành công, mời bạn nhấn Reset để cập nhật !");
-               
+                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            ShowDT();
         }
 
+        
         private void btReset_Click(object sender, EventArgs e)
         {
             dtgvShow.DataSource = Manager_BLL.Instance.Show();
@@ -126,9 +144,23 @@ namespace PBL03
 
         }
 
+        private void pnMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void Form_QuanLyThuNgan_Load(object sender, EventArgs e)
         {
             dtgvShow.DataSource = Manager_BLL.Instance.Show();
         }
+
+        //private void btnHomeDown_Click(object sender, EventArgs e)
+        //{
+        //    this.Dispose();
+        //    FormLogin flg = (FormLogin)Application.OpenForms["FormLogin"];
+        //    flg.Show();
+        //    flg.tbUsername.Text = string.Empty;
+        //    flg.tbPassword.Text = string.Empty;
+        //}
     }
 }

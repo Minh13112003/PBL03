@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tbSalary = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbPhone = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,7 +44,6 @@
             this.tbAccount = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbUsername = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.SuspendLayout();
             // 
             // tbSalary
@@ -147,7 +145,6 @@
             this.tbID.SelectedText = "";
             this.tbID.Size = new System.Drawing.Size(430, 34);
             this.tbID.TabIndex = 29;
-            this.tbID.TextChanged += new System.EventHandler(this.tbID_TextChanged);
             // 
             // guna2HtmlLabel6
             // 
@@ -277,7 +274,6 @@
             this.tbAccount.SelectedText = "";
             this.tbAccount.Size = new System.Drawing.Size(430, 34);
             this.tbAccount.TabIndex = 20;
-            this.tbAccount.TextChanged += new System.EventHandler(this.tbAccount_TextChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -324,7 +320,6 @@
             this.Controls.Add(this.lbUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Update";
-            this.Load += new System.EventHandler(this.Form_Update_Load);
             this.ResumeLayout(false);
 
         }
@@ -347,6 +342,5 @@
         public Guna.UI2.WinForms.Guna2TextBox tbAccount;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbUsername;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
