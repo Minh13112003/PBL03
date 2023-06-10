@@ -18,24 +18,19 @@ namespace PBL03.DangNhap.DangNhap_VIEW
             InitializeComponent();
         }
 
-        private void FormForgot2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TileButton2_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
-        private void guna2TileButton1_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
             if (tbnewPass.Text == tbconfirmPass.Text)
             {
                 if ((MessageBox.Show("Bạn có muốn đổi mật khẩu không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
                 {
                     string hashpassword = BCrypt.Net.BCrypt.HashPassword(tbconfirmPass.Text);
-                    Login_BLL.Instance.ChangePass(tbUser.Text, hashpassword);
+                    Login_BLL.Instance.ChangePass(tbUsername.Text, hashpassword);
                     MessageBox.Show("Đổi mật khẩu thành công, mời bạn đăng nhập lại !");
                     this.Dispose();
                 }
@@ -43,6 +38,5 @@ namespace PBL03.DangNhap.DangNhap_VIEW
             }
             else MessageBox.Show("New pass và confirm new pass không trùng nhau !");
         }
-        
     }
 }
